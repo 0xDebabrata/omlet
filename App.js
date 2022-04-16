@@ -116,8 +116,8 @@ export default function App() {
                             }
                         },
                         tabBarShowLabel: false,
-                        tabBarActiveTintColor: "#FFC45D",
-                        tabBarInactiveTintColor: "gray",
+                        tabBarActiveTintColor: "#CB8816",
+                        tabBarInactiveTintColor: "#FFDFA8",
                         tabBarStyle: {
                             height: 60,
                             paddingTop: 10,

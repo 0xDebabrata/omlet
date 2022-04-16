@@ -1,17 +1,16 @@
 import { Text, StyleSheet, View } from "react-native"
 import { StatusBar } from 'expo-status-bar';
 
-export default function ProfileScreen() {
+export default function Home() {
     return (
         <View
             style={styles.container}
         >
             <StatusBar style="auto" />
-            <Text
-                style={styles.text}
-            >
-                You are signed in.
+            <Text style={styles.header}>
+                Your Transactions
             </Text>
+
         </View>
     )
 }
@@ -19,8 +18,8 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        padding: 20,
+        justifyContent: "flex-start",
         backgroundColor: "white",
     },
     button: {
@@ -34,8 +33,12 @@ const styles = StyleSheet.create({
         alignItems: "center",
         flexDirection: "row"
     },
-    text: {
-        textAlign: "center",
-    },
+    header: {
+        fontFamily: "Inter_700Bold",
+        fontSize: 24,
+        textAlign: "left",
+        color: "#FFC45D"
+    }
+
 })
 
